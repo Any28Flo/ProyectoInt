@@ -61,8 +61,8 @@ let resumeRafa1 = "Desarrollador de software con experiencia en equipos de traba
 let resumeRafa2 = "robustas y seguras implementado las tecnologías con Java-EE, Maven y Spring Boot del lado del back-end y HTML5, CSS, JavaScript y Bootstrap en el apartdado front-end.";
 
 
-let ariel = new person ("J. Ariel Gonzalez", "./../src/img/Devs/ariel2.jpg", "Java FullStack Developer", "arielgonzalezdelacruz@gmail.com", "Enamorado de la programacion", "https://www.linkedin.com/in/jarielgc/", "https://github.com/iarielg");
-let mau = new person ("Mauricio Suárez Quintero", "./../src/img/Devs/mau2.jpg", "Java FullStack Developer", "mauricio_sq@comunidad.unam.mx", "I'm a Java Full Stack developer and mathematician.", "https://www.linkedin.com/in/mauriciosuarezq", "https://github.com/MauricioSQ");
+let ariel = new person ("J. Ariel Gonzalez", "./../src/img/Devs/ariel2.jpg", "Java FullStack Developer", "arielgonzalezdelacruz@gmail.com", "Enamorado de la programación", "https://www.linkedin.com/in/jarielgc/", "https://github.com/iarielg");
+let mau = new person ("Mauricio Suárez Quintero", "./../src/img/Devs/mau2.jpg", "Java FullStack Developer", "mauricio_sq@comunidad.unam.mx", "Soy Desarrollador Java Full Stack y Matemático.", "https://www.linkedin.com/in/mauriciosuarezq", "https://github.com/MauricioSQ");
 let Ahmad = new person ("Ahmad Dowidar", "./../src/img/Devs/ahmad2.jpg", "Java FullStack Developer", "a7mad.dowidar@gmail.com","If you try to fail, and succeed, which have you done?", "https://www.linkedin.com/in/ahmad-dowidar/", "https://github.com/theDowidar");
 let david = new person ("David Daniel Hernández", "./../src/img/Devs/david2.jpg", "Java FullStack Developer", "david.danielhdz@gmail.com", "Me gusta la tecnología y la automatización.", "https://www.linkedin.com/in/dhdavid", "https://github.com/david-danie");
 let rafa = new person ("Rafael Osnaya de Lucio", "./../src/img/Devs/rafa2.jpg" ,"Java FullStack Developer", "osnayadeluciorafael@hotmail.com", resumeRafa1 + resumeRafa2, "https://www.linkedin.com/in/rafael-osnaya-de-lucio-17b01720b/", "https://github.com/RafaOsnaya");

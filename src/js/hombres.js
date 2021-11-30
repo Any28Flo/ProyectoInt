@@ -14,145 +14,151 @@ function addItem(item) {
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 } // Objeto para Item
+/*
+let productoJSON= localStorage.getItem('product');
+//let myJSON= [{}];
+let myJSON= JSON.parse(productoJSON);
+console.log(myJSON)
+for(i=0;i<myJSON.length;i++){
+    console.log(myJSON[i])
+    addItem(myJSON[i]);
+}
+//let myJSONString=JSON.stringify(productoJSON);
 
-let productoJSON= localStorage.getItem('prodduct');
-const myJSON= JSON.parse(productoJSON);
-
-let myJSONString=JSON.stringify(productoJSON);
-addItem(myJSONString);
+*/
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 1',
+    'name': 'Estilo gris',
     //'description': 'Anfg',
     'img': './../src/img/Hombres/Playera1.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '320',
     'genero': 'M'
 }); // item #1
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 2',
+    'name': 'Cráneo',
     //'description': 'Animación 2',
     'img': './../src/img/Hombres/Playera2.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '290',
     'genero': 'M'
 }); // item #2
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 3',
+    'name': 'Navidad',
     //'description': 'Animación 3',
     'img': './../src/img/Hombres/Playera3.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '390',
     'genero': 'M'
 }); // item #3
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 4',
+    'name': 'Iluminación',
     //'description': 'Animación 4',
     'img': './../src/img/Hombres/Playera4.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '410',
     'genero': 'M'
 }); // item #4
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 5',
+    'name': 'Vista rosa',
     //'description': 'Animación 5',
     'img': './../src/img/Hombres/Playera5.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '250',
     'genero': 'M'
 }); // item #5
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 6',
+    'name': 'Gran Elfo',
     //'description': 'Animación 6',
     'img': './../src/img/Hombres/Playera6.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '380',
     'genero': 'M'
 }); // item #6
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 7',
+    'name': 'Clásico Never Dies',
     //'description': 'Animación 7',
     'img': './../src/img/Hombres/Playera7.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '230',
     'genero': 'M'
 }); // item #7
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 8',
+    'name': 'Rosas Dark',
     //'description': 'Animación 8',
     'img': './../src/img/Hombres/Playera8.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '250',
     'genero': 'M'
 }); // item #8
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 9',
+    'name': 'Día de Muertos',
     //'description': 'Animación 9',
     'img': './../src/img/Hombres/Playera9.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '360',
     'genero': 'M'
 }); // item #9
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 10',
+    'name': 'Alien',
     //'description': 'Animación 10',
     'img': './../src/img/Hombres/Playera10.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '370',
     'genero': 'M'
 }); // item #10
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 11',
+    'name': 'Buda',
     //'description': 'Animación 11',
     'img': './../src/img/Hombres/Playera11.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '320',
     'genero': 'M'
 }); // item #11
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 12',
+    'name': 'Tentáculos',
     //'description': 'Animación 12',
     'img': './../src/img/Hombres/Playera12.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '380',
     'genero': 'M'
 }); // item #12
-
+/*
 addItem({
     'tipo': 'playera',
     'name': 'MODELO 12',
@@ -160,28 +166,28 @@ addItem({
     'img': './../src/img/Hombres/Playera13.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '350',
     'genero': 'M'
 }); // item #12
-
+*/
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 12',
+    'name': 'Inspiración',
     //'description': 'Animación 12',
     'img': './../src/img/Hombres/Playera14.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '220',
     'genero': 'M'
 }); // item #12
 
 addItem({
     'tipo': 'playera',
-    'name': 'MODELO 12',
+    'name': 'Doble Serpiente',
     //'description': 'Animación 12',
     'img': './../src/img/Hombres/Playera15.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '320',
     'genero': 'M'
-}); // item #12
+}); // item #12*/

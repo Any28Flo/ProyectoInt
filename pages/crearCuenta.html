@@ -42,40 +42,43 @@
 
                     <div>
                         <label action="#" for="name" class="form-label"></label>
-                        <input type="text" class="form-control" id="name" placeholder="NOMBRE" required>
+                        <input type="text" class="form-control name" id="name" placeholder="NOMBRE" name="name" required>
                         <div class="valid-feedback">Correcto</div>
-
+                        <div class="invalid-feedback">Introduce solo letras y espacios</div>
                     </div>
 
                     <div>
                         <label for="email" class="form-label"></label>
-                        <input type="email" class="form-control" id="email" placeholder="CORREO" required>
+                        <input type="email" class="form-control email" id="email" placeholder="CORREO" name="phone" required>
                         <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Foramato inválido</div>
                     </div>
 
                     <div>
                         <label for="phone" class="form-label"></label>
-                        <input type="number" class="form-control" id="phone" placeholder="TELÉFONO" required>
+                        <input type="number" class="form-control phone" id="phone" placeholder="TELÉFONO" name="phone" required>
                         <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Introduce solo números</div>
                     </div>
 
                     <div>
                         <label for="pass0" class="form-label"></label>
-                        <input type="text" class="form-control" id="pass0" placeholder="CONTRASEÑA" required>
+                        <input type="password" class="form-control pass0" id="pass0" placeholder="CONTRASEÑA" name="pass0" required>
                         <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Foramato inválido</div>
                     </div>
 
                     <div>
                         <label for="pass1" class="form-label"></label>
-                        <input type="text" class="form-control" id="pass1" placeholder="CONFIRMA TU CONTRASEÑA"
-                            required>
+                        <input type="password" class="form-control pass1" id="pass1" placeholder="CONFIRMA TU CONTRASEÑA" name="pass1"required>
                         <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Foramato inválido</div>
                     </div>
 
                     <br><br><br><br>
 
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-dark">CREAR CUENTA</button>
+                        <button type="submit" name="nuevac" class="btn btn-dark">CREAR CUENTA</button>
                     </div>
 
                     <br>
@@ -108,10 +111,11 @@
                             <p>¿Tienes una cuenta en Never Dies?</p>
                         </div> -->
                     <br>
-                    <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-dark">INICIA SESIÓN</button>
-                    </div> <!--Form-->
-                </form>     
+<!--Form-->
+                </form>  
+                <div>
+                    <a class="d-grid gap-2" href="../pages/login.html"><button type="button" class="btn btn-dark">INICIA SESIÓN</button></a>
+               </div>    
             </div>
         </div>
     </div>

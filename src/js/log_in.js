@@ -111,3 +111,11 @@ else {
 
 
   })
+
+  // let usuario = []
+
+  // let example_JSON = localStorage.getItem('user0');
+  // example_JSON = JSON.parse(example_JSON);
+
+  // usuario.push(example_JSON)
+  // console.log(usuario)

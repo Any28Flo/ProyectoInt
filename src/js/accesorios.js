@@ -17,132 +17,132 @@ function addItem(item) {
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 1',
+    'name': 'Gorro Jabalí',
     //'description': 'Anfg',
     'img': './../src/img/Accesorios/Accesorios1.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '120',
     'genero': 'M'
 }); // item #1
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 2',
+    'name': 'Lentes Neves Dies',
     //'description': 'Animación 2',
     'img': './../src/img/Accesorios/Accesorios.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '320',
     'genero': 'M'
 }); // item #2
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 3',
+    'name': 'Gorra Azul NDS',
     //'description': 'Animación 3',
     'img': './../src/img/Accesorios/Accesorios3.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '320',
     'genero': 'M'
 }); // item #3
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 4',
+    'name': 'Bebé Never Dies',
     //'description': 'Animación 4',
     'img': './../src/img/Accesorios/Accesorios4.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '160',
     'genero': 'M'
 }); // item #4
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 5',
+    'name': 'Gorra Negra NDS',
     //'description': 'Animación 5',
     'img': './../src/img/Accesorios/Accesorios5.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '180',
     'genero': 'M'
 }); // item #5
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 6',
+    'name': 'Gorra Beso Azul',
     //'description': 'Animación 6',
     'img': './../src/img/Accesorios/Accesorios6.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '140',
     'genero': 'M'
 }); // item #6
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 7',
+    'name': 'Stickers Never Dies',
     //'description': 'Animación 7',
     'img': './../src/img/Accesorios/Accesorios7.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '20',
     'genero': 'M'
 }); // item #7
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 8',
+    'name': 'Mochila Negra',
     //'description': 'Animación 8',
     'img': './../src/img/Accesorios/Accesorios8.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '280',
     'genero': 'M'
 }); // item #8
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 9',
+    'name': 'Anillo Diablo',
     //'description': 'Animación 9',
     'img': './../src/img/Accesorios/Accesorios9.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '120',
     'genero': 'M'
 }); // item #9
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 10',
+    'name': 'Gorros Rojo y Negro Jabalí',
     //'description': 'Animación 10',
     'img': './../src/img/Accesorios/Accesorios10.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '200',
     'genero': 'M'
 }); // item #10
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 11',
+    'name': 'Botónes Never Dies',
     //'description': 'Animación 11',
     'img': './../src/img/Accesorios/Accesorios11.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '10',
     'genero': 'M'
 }); // item #11
 
 addItem({
     'tipo': 'accesorio',
-    'name': 'ACCESORIO 12',
+    'name': 'Almohada',
     //'description': 'Animación 12',
     'img': './../src/img/Accesorios/Accesorios12.jpg',
     //'color': 'Negro',
     'talla': 'M',
-    'precio': '5',
+    'precio': '280',
     'genero': 'M'
 }); // item #12

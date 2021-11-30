@@ -8,6 +8,7 @@
 
     <!-- Icono Never Dies Co en pestaña -->
     <link rel="icon" type="image/png" href="./../src/img/logonev.png">
+    <link rel="stylesheet" href="./src/css/index.css">
 
     <!-- Link para estylos navbar -->
     <link rel="stylesheet" href="./../src/css/navbar&footer.css">
@@ -19,71 +20,118 @@
     <!-- Bootstrap ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <script src="./src/js/bootstrap.bundle.min.js" defer></script>
+
     <title>Never Dies Co | Inicio</title>
 </head>
 
 <body>
-
     <div class="nav_root" id="navbar_root">
         <!-- Menú de navegación -->
     </div>
-    <br>
-    <div class="container">
-        <!--Carrusel-->
-        <section class="container" style="padding-top: 3vh;">
-            <div class="row text-center">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+    
+        <section class="home"><!--Carrusel -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-controls">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('./src/img/carrusel/carrusel1.jpg')"></li>
+                    <li data-target="#carousel" data-slide-to="1" style="background-image:url('./src/img/carrusel/carrusel2.jpg')"></li>
+                    <li data-target="#carousel" data-slide-to="2" style="background-image:url('./src/img/carrusel/carrusel3.jpg')"></li>
+                    
+                </ol>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <img src="./src/img/carrusel/left-arrow.svg" alt="Prev"> 
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <img src="./src/img/carrusel/right-arrow.svg" alt="Next">
+                </a>    
+
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url('./src/img/carrusel/carrusel1.jpg')">
+                    <div class="container">
+                    <h2>LOS MEJORES REGALOS ESTÁN EN EL BLACK FRIDAY 2021</h2>
+                    <p></p>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/src/img/Carrusel01.png" class="d-block w-100" alt="imagen de banda1"
-                                style="height: 70vh; width: 45vw;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/src/img/Carrusel02.png" class="d-block w-100" alt="imagen de banda2"
-                                style="height: 70vh; width: 45vw;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/src/img/Carrousel03.jpg" class="d-block w-100" alt="imagen de banda3"
-                                style="height: 70vh; width: 45vw;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/src/img/Carrousel04.jpg" class="d-block w-100" alt="imagen de banda3"
-                                style="height: 70vh; width: 45vw;">
-                        </div>
+                </div>
+                <div class="carousel-item" style="background-image:url('./src/img/carrusel/carrusel2.jpg')">
+                    <div class="container">
+                    <h2>DISEÑOS DE TEMPORADA DISPONIBLES!</h2>
+                    <p></p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+                <div class="carousel-item" style="background-image:url('./src/img/carrusel/carrusel3.jpg')">
+                    <div class="container">
+                    <h2>YA HUELE A NAVIDAD</h2>
+                    <p>DESCUENTOS HASTA 30%</p>
+                    </div>
+                </div>
                 </div>
             </div>
-        </section>
-        <!-- carrusel -->
-        <!--CARDS HOMBRE-MUJER-ACCESORIOS-->
+        </section><!--Carrusel -->
 
-        <br>
-        <div class="row justify-content-center ">
-            <div style="border: none; " class="card cnos col-xl-4 col-lg-6 col-md-6 col-sm-12 img-fluid">
+        <!--Carrusel -->
+        <!--
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./src/img/carrusel/carrusel1.jpeg" class="d-block w-100" alt="imagen de banda1"
+                        style="height: 80vh;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/img/carrusel/carrusel2.jpeg" class="d-block w-100" alt="imagen de banda2"
+                        style="height: 80vh">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/img/carrusel/carrusel3.jpeg" class="d-block w-100" alt="imagen de banda3"
+                        style="height: 80vh">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/img/carrusel/carrusel4.jpeg" class="d-block w-100" alt="imagen de banda3"
+                        style="height: 80vh">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/img/carrusel/carrusel5.jpeg" class="d-block w-100" alt="imagen de banda3"
+                        style="height: 80vh">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <button type="button" class="btn btn-outline-light" id="down">
+                <a href="#cards-down">
+                <img src="./src/img/carrusel/arrow-down.svg" alt="">
+            </a></button>
+        </div>
+        -->
+        <!-- carrusel -->
+
+        <!--CARDS HOMBRE-MUJER-ACCESORIOS-->
+        <div class="container">
+        <div class="row justify-content-center" id="cards-down">
+            <div style="border: none; " class="card cnos col-xl-4 col-lg-6 col-md-6 col-sm-8">
                 <div class="cnos card-section">
-                    <img src="src/img/hombres.jpg" width="250px" height="300px" style="opacity: 0.7;"
+                    <img src="src/img/hombres.jpg" width="250px" height="400px" style="opacity: 0.7;"
                         class="card-img">
                     <a class="nav-link display-1 stretched-link" href="./../pages/hombres.html"></a>
                     <div class="card-img-overlay"
@@ -91,14 +139,14 @@
                         <!--alineacion del texto-->
 
                         <!--ACTUALIZAR RUTA-->
-                        <h1 class="text-white">HOMBRE</h1>
+                        <h1 class="text-white sec-title">HOMBRE</h1>
                     </div>
                 </div>
             </div>
 
-            <div style="border: none;" class="card cnos col-xl-4 col-lg-6 col-md-6 col-sm-12 img-fluid">
+            <div style="border: none;" class="card cnos col-xl-4 col-lg-6 col-md-6 col-sm-8 img-fluid">
                 <div class="card-section">
-                    <img src="src/img/mujer.jpg" width="250px" height="300px" style="opacity: 0.7;"
+                    <img src="src/img/mujer.jpg" width="250px" height="400px" style="opacity: 0.7;"
                         class="card-img">
                     <a class="nav-link display-1 stretched-link" href="./../pages/mujeres.html"></a>
                     <div class="card-img-overlay"
@@ -106,29 +154,28 @@
                         <!--alineacion del texto-->
 
                         <!--ACTUALIZAR RUTA-->
-                        <h1 class="text-white">MUJER</h1>
+                        <h1 class="text-white sec-title">MUJER</h1>
                     </div>
                 </div>
             </div>
 
-            <div style="border: none;" class="card cnos col-xl-4 col-lg-6 col-md-6 col-sm-12 img-fluid">
+            <div style="border: none;" class="card cnos col-xl-4 col-lg-6 col-md-6 col-sm-8 img-fluid">
                 <div class="card-section">
-                    <img src="src/img/accesorio.jpg" width="250px" height="300px" style="opacity: 0.7;"
+                    <img src="src/img/accesorio.jpg" width="250px" height="400px" style="opacity: 0.7;"
                         class="card-img">
                     <a class="nav-link display-1 stretched-link" href="./../pages/accesorios.html"></a>
                     <div class="card-img-overlay"
-                        style="display:flex;justify-content:center; align-items: flex-end;margin-bottom: 3em;">
+                        style="display:flex; justify-content:center; align-items: flex-end; margin-bottom: 3em;">
                         <!--alineacion del texto-->
 
                         <!--ACTUALIZAR RUTA-->
-                        <h1 class="text-white">DISEÑOS</h1>
+                        <h1 class="text-white sec-title">ACCESORIOS</h1>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
+        </div>
     <!--GARANTIAS-->
     <div class="container text-center">
         <div id="valor" class="row justify-content-md-center">
@@ -213,8 +260,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <br>
     <!-- footer custom element -->

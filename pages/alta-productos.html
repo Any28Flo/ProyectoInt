@@ -39,6 +39,17 @@
 
                     <form class="row g-3 needs-validation" id="formulario" novalidate>
                         <!-- <div class="primer-form"> -->
+                         <div class="col-md-4 col-lg-4">
+                            <label for="validationCustom00" class="form-label">NOMBRE</label>
+                            <input type="text" class="form-control nombre" id="validationCustom00" name="nombre"
+                                placeholder="Ej.Skate" required>
+                            <div class="valid-feedback">
+                                Correcto
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor llena este campo correctamente.
+                            </div>
+                        </div>
                         <div class="col-md-4 col-lg-4">
                             <label for="validationCustom01" class="form-label">ID</label>
                             <input type="text" class="form-control id" id="validationCustom01" name="id"
@@ -83,13 +94,17 @@
 
                         <div class="col-md-4">
                             <!-- <label for="validationCustom04" class="form-label">GENÉRO</label> -->
-                            <select class="form-select genero" id="validationCustom04" name="genero"
+                            <!-- <select class="form-select genero" id="validationCustom04" name="genero"
                                 placeholder="GENERO" required>
                                 <option selected disabled value="0">GENÉRO</option>
                                 <option value="01">H</option>
                                 <option value="02">M</option>
                                 <option value="03">OTRO</option>
-                            </select>
+                            </select> -->
+                            <label for="validationCustom04" class="form-label">CANTIDAD</label>
+                            <input type="number" class="form-control cantidad" id="validationCustom04" name="cantidad"
+                                placeholder="CANTIDAD" required>
+                            
                             <div class="valid-feedback">
                                 Correcto!
                             </div>
@@ -122,9 +137,9 @@
                             <select class="form-select color" id="validationCustom06" name="color" placeholder="GENERO"
                                 required>
                                 <option selected disabled value="0">COLOR</option>
-                                <option value="01">ROJO</option>
-                                <option value="02">NEGRO</option>
-                                <option value="03">BLANCO</option>
+                                <option value="01" name="rojo">ROJO</option>
+                                <option value="02"name="negro">NEGRO</option>
+                                <option value="03"name="blanco">BLANCO</option>
                             </select>
                             <div class="valid-feedback">
                                 Correcto!

@@ -1,22 +1,25 @@
+.card-body {
+  padding: 0.01rem;
+  position: relative;
+}
 .img1{
-    margin: 5%;
-    max-height: 40vh; /* 10vh menos que el definido por columna para la imagen*/
-    max-width: 100vw; /* DE ESTE NO ESTOY SEGURO*/
-    width: 93%; /*Tamaño de imagen responsive*/
-    height: 100%;
+    position: relative;
+    right: -3%;
+    bottom: -7%;
+    width: 94%;
+    height: 85%;
 }
 .img2{
-    margin: 3%;
-    margin-top: 5%;
-    max-height: 40vh; /* 10vh menos que el definido por columna para la imagen*/
-    max-width: 100vw; /* DE ESTE NO ESTOY SEGURO*/
-    width: 93%; /*Tamaño de imagen responsive*/
-    height: 90%;
+    position: relative;
+    right: -3%;
+    bottom: -5%;
+    width: 94%; /*Tamaño de imagen responsive*/
+    height: 85%;
 }
 
 h5{
     font-size:x-large;
-    color:crimson;
+    color: darkblue;
 }
 p{
     /* font-size:larger; */

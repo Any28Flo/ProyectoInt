@@ -1,7 +1,8 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
-
+let correct = document.getElementById('correct');
+let alert = document.getElementById('alert')
 
 const expresiones = {
     usuario: /^[a-zA-Z0-9\_\-]{4,36}$/, // Letras, numeros, guion y guion_bajo
@@ -119,11 +120,11 @@ inputs.forEach(function (input) {
 
 formulario.addEventListener('submit', function (e) {
     e.preventDefault();
-
+    alert.innerHTML =""
     const terminos = document.querySelector('.terminos');
     if (campos.nombre && campos.correo && campos.telefono && campos.motivo && campos.mensaje && terminos.checked) {
         formulario.reset();
-        let correct = document.getElementById('correct');
+        
         correct.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -142,10 +143,16 @@ formulario.addEventListener('submit', function (e) {
           Tu mensaje ha sido enviado.
         </div>
       </div>`
+      document.querySelector('.alert').remove('.alert')
 
-        console.log('tu formulario ha sido enviado');
+      document.querySelector('.nombre').classList.remove('is-valid');
+      document.querySelector('.correo').classList.remove('is-valid');
+      document.querySelector('.telefono').classList.remove('is-valid');
+      document.querySelector('.motivo').classList.remove('is-valid');
+      document.querySelector('.mensaje').classList.remove('is-valid');
+
     } else {
-        let alert = document.getElementById('alert')
+        correct.innerHTML = ""
         alert.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>

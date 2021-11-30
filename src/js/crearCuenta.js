@@ -128,5 +128,11 @@ if (fieldPass1.length >= 10
     else if(e.target.name=='login'){
         window.location.href="./../pages/login.html"
     }
+    
+};
+    const form1 = document.getElementById('form_nc');
+    form1.addEventListener('submit', validacionDeFormulario);
+  console.log(usuarios); 
+  console.log(storeList);
 
 });

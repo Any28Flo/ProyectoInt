@@ -52,62 +52,75 @@
                                                 id="exampleModalToggleLabel">
                                                 AGREGAR AL CARRITO</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                                aria-label="Close" id="btn"></button>
                                 </div>
                                 <div class="modal-body">
-                                        <div class="row">
-                                                <div class="row-cols-auto text-center">
-                                                        <select class="text-center" "form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>Selecciona el color</option>
-                                                                <option value="1">NEGRO</option>
-                                                                <option value="2">BLANCO</option>
-                                                                <option value="3">ROJO</option>
-                                                        </select>
-                                                </div>
-                                                <br>
+                                        <form>
                                                 <div class="row">
-                                                        <h5 class="text-center">TALLA</h5>
-                                                        <div class="col-6 text-end">
-                                                                <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                                name="inlineRadioOptions"
-                                                                                id="inlineRadio1" value="option1">
-                                                                        <label class="form-check-label"
-                                                                                for="inlineRadio1">CH</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                                name="inlineRadioOptions"
-                                                                                id="inlineRadio2" value="option2">
-                                                                        <label class="form-check-label"
-                                                                                for="inlineRadio2">M</label>
-                                                                </div>
+                                                        <div class="row-cols-auto text-center">
+                                                                <select class="text-center" id="select" "form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled value="0">Selecciona
+                                                                                el color</option>
+                                                                        <option value="1">NEGRO</option>
+                                                                        <option value="2">BLANCO</option>
+                                                                        <option value="3">ROJO</option>
+                                                                </select>
                                                         </div>
-                                                        <div class="col-6 text-start">
-                                                                <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                                name="inlineRadioOptions"
-                                                                                id="inlineRadio2" value="option2">
-                                                                        <label class="form-check-label"
-                                                                                for="inlineRadio2">GD</label>
+                                                        <br>
+                                                        <div class="row radio">
+                                                                <h5 class="text-center">TALLA</h5>
+                                                                <div class="col-6 text-end">
+                                                                        <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input"
+                                                                                        type="radio"
+                                                                                        name="inlineRadioOptions"
+                                                                                        id="inlineRadio1" value="chico"
+                                                                                        checked>
+                                                                                <label class="form-check-label"
+                                                                                        for="inlineRadio1">CH</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input"
+                                                                                        type="radio"
+                                                                                        name="inlineRadioOptions"
+                                                                                        id="inlineRadio2"
+                                                                                        value="mediano">
+                                                                                <label class="form-check-label"
+                                                                                        for="inlineRadio2">M</label>
+                                                                        </div>
                                                                 </div>
-                                                                <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"
-                                                                                name="inlineRadioOptions"
-                                                                                id="inlineRadio2" value="option2">
-                                                                        <label class="form-check-label"
-                                                                                for="inlineRadio2">EG</label>
+                                                                <div class="col-6 text-start">
+                                                                        <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input"
+                                                                                        type="radio"
+                                                                                        name="inlineRadioOptions"
+                                                                                        id="inlineRadio3"
+                                                                                        value="grande">
+                                                                                <label class="form-check-label"
+                                                                                        for="inlineRadio2">GD</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input"
+                                                                                        type="radio"
+                                                                                        name="inlineRadioOptions"
+                                                                                        id="inlineRadio4"
+                                                                                        value="extraGrande">
+                                                                                <label class="form-check-label"
+                                                                                        for="inlineRadio2">EG</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="alert text-center text-danger">
+                                                                        <!-- alert -->
                                                                 </div>
                                                         </div>
                                                 </div>
-                                        </div>
+                                        </form>
                                 </div>
                                 <div class="modal-footer">
                                         <button type="button" class="btn btn-dark"
-                                                data-bs-dismiss="modal">CANCELAR</button>
-                                        <button type="button" class="btn btn-dark"
-                                                data-bs-dismiss="modal">AGREGAR</button>
+                                                data-bs-dismiss="modal" id="cancel">CANCELAR</button>
+                                        <button type="button" class="btn btn-dark" id="agregar-carrito">AGREGAR</button>
                                 </div>
                         </div>
                 </div>
@@ -125,7 +138,7 @@
                 crossorigin="anonymous"></script>
 
         <!--Mujeres JS-->
-        <script src="./../src/js/mujeres.js"></script>
+        <script src="./../src/js/mujeres.js" type="module"></script>
         <!--Barra de navegación-->
         <script src="../src/js/navbar.js" type="module"></script>
         <!-- footer JS -->

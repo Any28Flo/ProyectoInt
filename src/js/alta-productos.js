@@ -1,3 +1,4 @@
+
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const select = document.querySelectorAll('.form-select');
@@ -30,6 +31,19 @@ const validarFormulario = function (e) {
     const noms = 'input';
     localStorage.setItem('nombresusuas',noms);
     switch (e.target.name) {
+        case "nombre":
+            if (expresiones.nombre.test(e.target.value)) {
+
+                document.querySelector('.nombre').classList.add('is-valid');
+                document.querySelector('.nombre').classList.remove('is-invalid');
+                campos.nombre = true;
+            } else {
+
+                document.querySelector('.id').classList.add('is-invalid');
+                document.querySelector('.id').classList.remove('is-valid');
+                campos.id = false;
+            }
+            break;
         case "id":
             if (expresiones.id.test(e.target.value)) {
 
@@ -67,6 +81,19 @@ const validarFormulario = function (e) {
                 document.querySelector('.talla').classList.add('is-invalid');
                 document.querySelector('.talla').classList.remove('is-valid');
                 campos.talla = false;
+            }
+            break;
+        case "cantidad":
+            if (expresiones.nombre.test(e.target.value)) {
+    
+                document.querySelector('.cantidad').classList.add('is-valid');
+                document.querySelector('.cantidad').classList.remove('is-invalid');
+                campos.nombre = true;
+            } else {
+    
+                document.querySelector('.cantidad').classList.add('is-invalid');
+                document.querySelector('.cantidad').classList.remove('is-valid');
+                campos.id = false;
             }
             break;
         case "genero":
@@ -182,46 +209,59 @@ formulario.addEventListener('submit', function (e) {
 
     //const noms = 'listener';
     //localStorage.setItem('nombresusuas',noms);
-    if (campos.id && campos.tipo && campos.categoria && campos.talla && campos.genero && campos.precio  && campos.descripcion && campos.color && campos.imagen) {
-        let id = document.getElementById('validationCustom01').value;
-        console.log(id);
-        let tipo = document.getElementById('validationCustom02').value;
-        console.log(tipo);
-        let talla = document.getElementById('validationCustom03').value;
-        console.log(talla);
-        let genero = document.getElementById('validationCustom04').value;
-        console.log(genero);
-        let nombre = document.getElementById('validationCustom05').value;
-        console.log(nombre);
-        let color = document.getElementById('validationCustom06').value;
-        console.log(color);
-        let precio = document.getElementById('validationCustom07').value;
-        console.log(precio);
-        let categoria = document.getElementById('validationCustom08').value;
-        console.log(categoria);
-        //let imagen = document.getElementById('validationCustom09').value;
-        //onsole.log(imagen);
-        // let descripcion = document.querySelector('.descripcion').value;
-        // console.log(descripcion);
+    if (campos.id && campos.tipo && campos.nombre && campos.categoria && campos.talla && campos.genero && campos.precio  && campos.descripcion && campos.color && campos.imagen) {
+        
     
+        let nombre = document.getElementById('validationCustom00').value;
+        let id = document.getElementById('validationCustom01').value;
+        let tipo = document.getElementById('validationCustom02').value;
+        let talla = document.getElementById('validationCustom03');
+        let talla1 = talla.options[talla.selectedIndex].text;
+        let genero = document.getElementById('validationCustom04');
+        let genero1 = genero.options[genero.selectedIndex].text;
+        let color = document.getElementById('validationCustom06');
+        let color1= color.options[color.selectedIndex].text;//
+        let precio = document.getElementById('validationCustom07').value;
+        let categoria = document.getElementById('validationCustom05');
+        let categoria1 = categoria.options[categoria.selectedIndex].text;
+        let imagen = document.getElementById('validationCustom08').value;
+        let descripcion = document.querySelector('.descripcion').value;
+
         let newProducto = {
+                nombre:`${nombre}`,
                 id: `${id}`,
                 tipo: `${tipo}`,
-                talla: `${talla}`,
-                genero: `${genero}`,
-                nombre:`${nombre}`,
-                color: `${color}`,
+                talla: `${talla1}`,
+                genero: `${genero1}`,
+                color: `${color1}`,
                 precio: `${precio}`,
-                categoria: `${categoria}`,
+                categoria: `${categoria1}`,
                 
-                //descripcion:`${descripcion}`
-                //imagen: `${imagen}`,
+                descripcion:`${descripcion}`,
+                imagen: `${imagen}`
                 //categ:document.getElementById('validationCustom08')
             }; // item #1
-    
-            const productoJSON = JSON.stringify(newProducto)
-           // const myJSON= JSON.parse(productoJSON)
+        //let productoJSON;
+        //let arregloProductos=[{}];
+        if (!(localStorage.getItem('product'))){
+            let primerArreglo=[newProducto];
+            let productoJSON = JSON.stringify(primerArreglo)// const myJSON= JSON.parse(productoJSON)
             localStorage.setItem('product',productoJSON);
+        }
+        else{
+            let arregloProductos= JSON.parse(localStorage.getItem('product'));
+
+            arregloProductos.push(newProducto)
+    
+        // convierte arreglousuario  a string
+            localStorage.setItem('product', JSON.stringify(arregloProductos))
+    
+
+        }
+            
+           
+           
+            
            // document.querySelector('.alert').innerHTML = productoJSON.tipo
             
            let product = localStorage.getItem('product');
@@ -229,9 +269,9 @@ formulario.addEventListener('submit', function (e) {
            //console.log("product");
            function addItem(product) {
             const itemHTML = '<div class="card" style="width: 18rem;  border: none;">\n' +
-                '<h5 class="card-title">' + product.color + '</h5>\n' +
+                '<h5 class="card-title">' + product.append(color) + '</h5>\n' +
                 //'<h6 class="card-title">' + 'Descripción: ' + item.description + '</h6>\n' +
-                '<p>' + 'Precio: $' + product.precio + '</p>' +
+                '<p>' + 'Precio: $' + product.append(precio) + '</p>' +
                 //'<p>' + 'Color: ' + item.color + '</p>' +
                 //'<a href="#" class="btn btn-dark data-bs-toggle="modal" data-bs-target="#winModal"" ><i class="bi bi-cart2"></i> AGREGAR AL CARRITO</a>\n' +
                 '<button type="button" class="content-fluid btn btn-dark" data-bs-toggle="modal" data-bs-target="#ventanaModal"><i class="bi bi-cart2"></i> AGREGAR AL CARRITO</button>' +
